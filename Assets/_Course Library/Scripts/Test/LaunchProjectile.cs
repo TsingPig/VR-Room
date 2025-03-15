@@ -1,6 +1,5 @@
 ﻿using BNG;
 using System.Diagnostics.CodeAnalysis;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using VRExplorer;
 
@@ -9,7 +8,7 @@ using VRExplorer;
 /// </summary>
 public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEntity
 {
-    [ExcludeFromCodeCoverage] public float TriggeringTime => 0.5f;
+    [ExcludeFromCodeCoverage] public float TriggeringTime => 1.5f;
     [ExcludeFromCodeCoverage] public string Name => Str.Gun;
     [ExcludeFromCodeCoverage]
     public Grabbable Grabbable

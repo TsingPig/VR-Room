@@ -1,13 +1,34 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.Video;
-
+using VRExplorer;
 /// <summary>
 /// Play a single video or play from a list of videos 
 /// </summary>
 [RequireComponent(typeof(VideoPlayer))]
-public class PlayVideo : MonoBehaviour
+public class PlayVideo : MonoBehaviour, ITriggerableEntity
 {
+    [ExcludeFromCodeCoverage] public float TriggeringTime => 1.5f;
+    [ExcludeFromCodeCoverage] public string Name => Str.Gun;
+
+    [ExcludeFromCodeCoverage]
+    public void Triggerring()
+    {
+        TogglePlayStop();
+        NextClip();
+        PreviousClip();
+        TogglePlayPause();
+    }
+
+    [ExcludeFromCodeCoverage]
+    public void Triggerred()
+    {
+        TogglePlayStop();
+        TogglePlayPause();
+
+    }
+
     [Tooltip("Whether video should play on load")]
     public bool playAtStart = false;
 
@@ -30,7 +51,7 @@ public class PlayVideo : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
         videoPlayer = GetComponent<VideoPlayer>();
 
-        if (videoClips.Count > 0)
+        if(videoClips.Count > 0)
             videoPlayer.clip = videoClips[0];
 
         offMaterial = meshRenderer.material;
@@ -42,7 +63,7 @@ public class PlayVideo : MonoBehaviour
 
     private void Start()
     {
-        if (playAtStart)
+        if(playAtStart)
         {
             Play();
         }
@@ -66,7 +87,7 @@ public class PlayVideo : MonoBehaviour
 
     public void RandomClip()
     {
-        if (videoClips.Count > 0)
+        if(videoClips.Count > 0)
         {
             index = Random.Range(0, videoClips.Count);
             Play();
@@ -75,7 +96,7 @@ public class PlayVideo : MonoBehaviour
 
     public void PlayAtIndex(int value)
     {
-        if (videoClips.Count > 0)
+        if(videoClips.Count > 0)
         {
             index = Mathf.Clamp(value, 0, videoClips.Count);
             Play();
@@ -104,7 +125,7 @@ public class PlayVideo : MonoBehaviour
     {
         meshRenderer.material = videoMaterial;
 
-        if (videoPlayer.isPlaying)
+        if(videoPlayer.isPlaying)
             videoPlayer.Pause();
         else
             videoPlayer.Play();
@@ -112,7 +133,7 @@ public class PlayVideo : MonoBehaviour
 
     public void SetPlay(bool value)
     {
-        if (value)
+        if(value)
         {
             Play();
         }
@@ -129,8 +150,8 @@ public class PlayVideo : MonoBehaviour
 
     private void OnValidate()
     {
-            
-        if (TryGetComponent(out VideoPlayer videoPlayer))
+
+        if(TryGetComponent(out VideoPlayer videoPlayer))
             videoPlayer.targetMaterialProperty = "_BaseMap";
     }
 }

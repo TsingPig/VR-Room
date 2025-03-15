@@ -28,7 +28,7 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-    }
+    }   
     void Update()
     {
         if(rigidbody.velocity.magnitude >= velocityThreshold)
