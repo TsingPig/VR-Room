@@ -1,13 +1,33 @@
-﻿using System;
+﻿using BNG;
+using System;
 using UnityEngine;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine.Events;
+using VRExplorer;
 
 /// <summary>
 /// When an object is tilted, run some functionality
 /// Used with a grabable object
 /// </summary>
-public class OnTilt : MonoBehaviour
+public class OnTilt : MonoBehaviour, IGrabbableEntity
 {
+    [ExcludeFromCodeCoverage]
+    public Grabbable Grabbable
+    {
+        get
+        {
+            var g = GetComponent<Grabbable>();
+            if(g) return g;
+            return gameObject.AddComponent<Grabbable>();
+        }
+    }
+    [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
+
+    [ExcludeFromCodeCoverage]
+    public void OnGrabbed()
+    {
+    }
+
     [Tooltip("Tilt range, 0 - 180 degrees")]
     [Range(0, 1)] public float threshold = 0.1f;
 
@@ -33,11 +53,11 @@ public class OnTilt : MonoBehaviour
 
         bool thresholdCheck = similarity >= threshold;
 
-        if (withinThreshold != thresholdCheck)
+        if(withinThreshold != thresholdCheck)
         {
             withinThreshold = thresholdCheck;
 
-            if (withinThreshold)
+            if(withinThreshold)
             {
                 OnBegin.Invoke(this);
             }
@@ -47,4 +67,6 @@ public class OnTilt : MonoBehaviour
             }
         }
     }
+
+
 }

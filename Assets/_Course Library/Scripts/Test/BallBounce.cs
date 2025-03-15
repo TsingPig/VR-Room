@@ -1,8 +1,28 @@
+using BNG;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
+using VRExplorer;
 
 [RequireComponent(typeof(AudioSource))]
-public class BallCollisionSound : MonoBehaviour
+public class BallBounce : MonoBehaviour, IGrabbableEntity
 {
+    [ExcludeFromCodeCoverage]
+    public Grabbable Grabbable
+    {
+        get
+        {
+            var g = GetComponent<Grabbable>();
+            if(g) return g;
+            return gameObject.AddComponent<Grabbable>();
+        }
+    }
+    [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
+
+    [ExcludeFromCodeCoverage]
+    public void OnGrabbed()
+    {
+    }
+
     public AudioClip collisionSound; // Sound clip for ball collision
 
     private AudioSource audioSource; // Reference to the AudioSource component
