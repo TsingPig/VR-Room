@@ -10,7 +10,7 @@ using VRExplorer;
 public class PlayVideo : MonoBehaviour, ITriggerableEntity
 {
     [ExcludeFromCodeCoverage] public float TriggeringTime => 1.5f;
-    [ExcludeFromCodeCoverage] public string Name => Str.Gun;
+    [ExcludeFromCodeCoverage] public string Name => Str.Triggerable;
 
     [ExcludeFromCodeCoverage]
     public void Triggerring()
@@ -25,8 +25,6 @@ public class PlayVideo : MonoBehaviour, ITriggerableEntity
     public void Triggerred()
     {
         TogglePlayStop();
-        TogglePlayPause();
-
     }
 
     [Tooltip("Whether video should play on load")]
