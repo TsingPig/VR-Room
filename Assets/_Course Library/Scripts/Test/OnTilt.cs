@@ -49,7 +49,7 @@ public class OnTilt : MonoBehaviour, IGrabbableEntity
     private void CheckOrientation()
     {
         float similarity = Vector3.Dot(-transform.up, Vector3.up);
-        similarity = Mathf.InverseLerp(-1, 1, similarity);
+        similarity = Mathf.InverseLerp(0, 1, similarity);
 
         bool thresholdCheck = similarity >= threshold;
 
