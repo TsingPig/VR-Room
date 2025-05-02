@@ -16,6 +16,8 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
             return gameObject.AddComponent<Grabbable>();
         }
     }
+    [ExcludeFromCodeCoverage] public Transform Destination => null;
+
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
 
     [ExcludeFromCodeCoverage]

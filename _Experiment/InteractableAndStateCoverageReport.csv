@@ -1,1 +1,6 @@
+TimeCost,TriggeredStateCount,StateCount,CoveredInteractableCount,InteractableCount,InteractableCoverage,StateCountCoverage
 0,0,21,0,11,0.00,0.00
+15.00764,0,21,0,11,0.00,0.00
+30.00813,0,21,0,11,0.00,0.00
+45.01167,0,21,0,11,0.00,0.00
+60.01618,0,21,0,11,0.00,0.00

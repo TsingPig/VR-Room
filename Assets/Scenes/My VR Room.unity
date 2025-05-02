@@ -1756,7 +1756,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: df2313d2-9a91-40cd-a677-59a794129855
+      m_Id: 976600f4-1ddf-4b7a-8d62-5bb9886249ba
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1852,7 +1852,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 49846eb4-ec9e-4817-b59d-adf57c7af617
+      m_Id: b985c0cc-2d6e-446c-a981-5b58aedfeae8
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1912,7 +1912,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 8101dbb0-a3e9-4b15-ab54-e1b8ff47a3a3
+      m_Id: fe8380b8-28ca-4f2a-8ae3-3774e8a6cb6e
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1924,7 +1924,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: b0ee1039-e025-48f5-becb-0b3bd8536bd6
+      m_Id: bcd7bcfe-b3cc-43d2-b0f4-1194501b761d
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2164,7 +2164,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 7655c621-1ba2-49cb-9257-af2dca7c3ad9
+      m_Id: 31db8470-ef87-4426-9d14-130bd216fd28
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2260,7 +2260,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: ce98979e-477f-4e99-8fde-f9ccbb48609a
+      m_Id: 419b8c4e-2b9a-4d89-9027-ba8022407110
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2320,7 +2320,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 5b018b40-606c-44ce-95c6-28994866a79b
+      m_Id: b2b819e6-31fe-4f47-b9c6-e26880e1658c
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2332,7 +2332,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: e5e79395-aebd-451c-b689-c8ca3a6e55cd
+      m_Id: 20677f9a-9965-4879-8a39-ea3ee7da70d0
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3939,7 +3939,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 8b7233bc-9560-47eb-b086-f78c34ce7969
+      m_Id: 566befd0-e257-4400-ba61-ecadc6da0dde
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -4035,7 +4035,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 237e27c6-58b1-44fa-bb41-7017745271e9
+      m_Id: 844e7411-6fae-463f-8560-3287e3025c17
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -4095,7 +4095,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: ae8b06d1-2d82-4c0b-80ba-448e818d6312
+      m_Id: c2c99d1b-7845-4089-884e-2ffc3591dd97
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -4107,7 +4107,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: ac2d861a-594a-451a-8edc-940a1a65ca92
+      m_Id: 3aa75248-2fb3-48be-b85a-a5d5db9e8e01
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -7388,6 +7388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  events: []
+  triggeringTime: 0.5
 --- !u!1 &872940674
 GameObject:
   m_ObjectHideFlags: 0
@@ -11416,7 +11418,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 4c8d157a-9401-41cb-9e1c-e73aa2722bdc
+      m_Id: 2653f159-b5c1-4bdf-9389-1abbbf181de7
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -11512,7 +11514,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: a618b254-302c-4d43-be47-bc7c9f0f95ac
+      m_Id: 7a54f993-1f85-43cf-bf91-3165e7b812e7
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -11572,7 +11574,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: a9b21d01-259c-4a56-a4dd-0e031edd9fcb
+      m_Id: bb284cf6-7401-4ae6-86a4-efcc05c2344a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -11584,7 +11586,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 781935f5-1207-4985-baac-cf4dc72dab78
+      m_Id: 15533535-a444-4733-a95a-ad6516de72a4
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -11775,12 +11777,12 @@ MonoBehaviour:
       m_Name: Main Camera - TPD - Position
       m_Type: 0
       m_ExpectedControlType: Vector3
-      m_Id: 5cf1b684-82f3-4ca3-b1b1-fb54b194cc74
+      m_Id: 
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: cdade107-60d2-4447-bf87-731ac1d42896
+        m_Id: 
         m_Path: <XRHMD>/centerEyePosition
         m_Interactions: 
         m_Processors: 
@@ -11795,12 +11797,12 @@ MonoBehaviour:
       m_Name: Main Camera - TPD - Rotation
       m_Type: 0
       m_ExpectedControlType: Quaternion
-      m_Id: 6e36d58f-6cfe-4241-a9b6-4a330f1a019a
+      m_Id: 
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 2d355b81-c697-4669-979a-ed60e037a731
+        m_Id: 
         m_Path: <XRHMD>/centerEyeRotation
         m_Interactions: 
         m_Processors: 
@@ -11812,10 +11814,10 @@ MonoBehaviour:
   m_TrackingStateInput:
     m_UseReference: 0
     m_Action:
-      m_Name: Tracking State Input
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 05e8bb4b-5753-4c03-b2d8-d3f9389a20d5
+      m_Id: 90931e0e-a331-4f2a-be70-5a1ff16ede3a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -12301,6 +12303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  events: []
+  triggeringTime: 0.5
 --- !u!114 &1344135008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12313,6 +12317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005b36b8fc16f6649ac98d1464b1c1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destination: {fileID: 0}
 --- !u!1 &1352912568
 GameObject:
   m_ObjectHideFlags: 0
@@ -12905,6 +12910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005b36b8fc16f6649ac98d1464b1c1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destination: {fileID: 0}
 --- !u!1 &1360479736
 GameObject:
   m_ObjectHideFlags: 0
@@ -18556,6 +18562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005b36b8fc16f6649ac98d1464b1c1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destination: {fileID: 0}
 --- !u!114 &1860081464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18568,6 +18575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  events: []
+  triggeringTime: 0.5
 --- !u!1001 &1865680026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18698,6 +18707,10 @@ PrefabInstance:
     - target: {fileID: 7079763014310332028, guid: 9b838f63756dada41a228550bcc5bdf3, type: 3}
       propertyPath: m_Name
       value: VRGuide
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079763014310332028, guid: 9b838f63756dada41a228550bcc5bdf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7079763014310332031, guid: 9b838f63756dada41a228550bcc5bdf3, type: 3}
       propertyPath: m_RootOrder
@@ -20034,6 +20047,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  events: []
+  triggeringTime: 0.5
 --- !u!1001 &2036126889
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ public class OnTilt : MonoBehaviour, IGrabbableEntity
         }
     }
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
+    [ExcludeFromCodeCoverage] public Transform Destination => null;
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()

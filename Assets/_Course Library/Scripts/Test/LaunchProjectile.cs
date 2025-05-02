@@ -10,6 +10,8 @@ public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEnt
 {
     [ExcludeFromCodeCoverage] public float TriggeringTime => 1.5f;
     [ExcludeFromCodeCoverage] public string Name => Str.Gun;
+    [ExcludeFromCodeCoverage] public Transform Destination => null;
+
     [ExcludeFromCodeCoverage]
     public Grabbable Grabbable
     {
