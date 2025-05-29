@@ -12,6 +12,10 @@ using VRExplorer;
 public class OnTilt : MonoBehaviour, IGrabbableEntity
 {
     [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
+    [ExcludeFromCodeCoverage]
     public Grabbable Grabbable
     {
         get

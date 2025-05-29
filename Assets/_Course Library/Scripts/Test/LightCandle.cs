@@ -45,4 +45,8 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
             flames.Play();
         }
     }
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
 }

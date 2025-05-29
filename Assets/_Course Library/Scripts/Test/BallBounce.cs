@@ -7,6 +7,10 @@ using VRExplorer;
 public class BallBounce : MonoBehaviour, IGrabbableEntity
 {
     [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
+    [ExcludeFromCodeCoverage]
     public Grabbable Grabbable
     {
         get

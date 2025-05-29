@@ -8,6 +8,10 @@ using VRExplorer;
 /// </summary>
 public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEntity
 {
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
     [ExcludeFromCodeCoverage] public float TriggeringTime => 1.5f;
     [ExcludeFromCodeCoverage] public string Name => Str.Gun;
     [ExcludeFromCodeCoverage] public Transform Destination => null;
