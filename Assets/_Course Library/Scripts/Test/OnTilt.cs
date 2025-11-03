@@ -12,10 +12,6 @@ using HenryLab;
 public class OnTilt : MonoBehaviour, IGrabbableEntity
 {
     [ExcludeFromCodeCoverage]
-    public void OnReleased()
-    {
-    }
-    [ExcludeFromCodeCoverage]
     public Grabbable Grabbable
     {
         get
@@ -27,8 +23,6 @@ public class OnTilt : MonoBehaviour, IGrabbableEntity
     }
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
     [ExcludeFromCodeCoverage] public Transform Destination => null;
-
-    public Transform Destination => throw new NotImplementedException();
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()

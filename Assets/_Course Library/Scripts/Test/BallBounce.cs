@@ -7,10 +7,6 @@ using HenryLab;
 public class BallBounce : MonoBehaviour, IGrabbableEntity
 {
     [ExcludeFromCodeCoverage]
-    public void OnReleased()
-    {
-    }
-    [ExcludeFromCodeCoverage]
     public Grabbable Grabbable
     {
         get
@@ -23,8 +19,6 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
     [ExcludeFromCodeCoverage] public Transform Destination => null;
 
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
-
-    public Transform Destination => throw new System.NotImplementedException();
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()

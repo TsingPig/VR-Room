@@ -11,17 +11,14 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
         get
         {
             var g = GetComponent<Grabbable>();
-            if(g) return g;
+            if (g) return g;
             return gameObject.AddComponent<Grabbable>();
         }
     }
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
 
-<<<<<<< Updated upstream
     [ExcludeFromCodeCoverage] public Transform Destination => null;
-=======
-    public Transform Destination => throw new System.NotImplementedException();
->>>>>>> Stashed changes
+
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()
@@ -34,30 +31,23 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-    }   
+    }
     void Update()
     {
-        if(rigidbody.velocity.magnitude >= velocityThreshold)
+        if (rigidbody.velocity.magnitude >= velocityThreshold)
         {
             flames.Stop();
         }
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             flames.Play();
         }
     }
-<<<<<<< Updated upstream
     [ExcludeFromCodeCoverage]
     public void OnReleased()
     {
-=======
-
-    public void OnReleased()
-    {
-        throw new System.NotImplementedException();
->>>>>>> Stashed changes
     }
 }
