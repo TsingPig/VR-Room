@@ -1,7 +1,7 @@
 using BNG;
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
-using VRExplorer;
+using HenryLab;
 
 [RequireComponent(typeof(AudioSource))]
 public class BallBounce : MonoBehaviour, IGrabbableEntity
@@ -23,6 +23,8 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
     [ExcludeFromCodeCoverage] public Transform Destination => null;
 
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
+
+    public Transform Destination => throw new System.NotImplementedException();
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()
@@ -46,5 +48,10 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
         {
             audioSource.PlayOneShot(collisionSound);
         }
+    }
+
+    public void OnReleased()
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.Video;
-using VRExplorer;
+using HenryLab;
 /// <summary>
 /// Play a single video or play from a list of videos 
 /// </summary>

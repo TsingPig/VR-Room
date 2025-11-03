@@ -1,21 +1,34 @@
 {
   "dependencies": {
-    "com.tsingpig.vrexplorer": {
-      "version": "file:D:/--UnityProject/VR/VRExplorer/Assets/VRExplorer",
+    "com.henrylab.vragent": {
+      "version": "https://github.com/TsingPig/VRAgent_Release.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.test-framework": "1.0.16",
         "com.unity.settings-manager": "1.0.1",
         "com.unity.xr.interaction.toolkit": "2.0.4"
-      }
+      },
+      "hash": "79a86fffa72adec3d7df6aa293c86502eb98aa97"
+    },
+    "com.henrylab.vrexplorer": {
+      "version": "https://github.com/TsingPig/VRExplorer_Release.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.test-framework": "1.0.16",
+        "com.unity.settings-manager": "1.0.1",
+        "com.unity.xr.interaction.toolkit": "2.0.4"
+      },
+      "hash": "4978ac8f08580a2b2d3bd2cd2a7c53fc5a8ef79a"
     },
     "com.unity.burst": {
-      "version": "1.7.3",
+      "version": "1.8.18",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.mathematics": "1.2.1"
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.cn"
     },
@@ -75,7 +88,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.render-pipelines.core": {
-      "version": "12.1.7",
+      "version": "12.1.15",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
@@ -85,14 +98,14 @@
       }
     },
     "com.unity.render-pipelines.universal": {
-      "version": "12.1.7",
+      "version": "12.1.15",
       "depth": 0,
       "source": "builtin",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
-        "com.unity.burst": "1.7.3",
-        "com.unity.render-pipelines.core": "12.1.7",
-        "com.unity.shadergraph": "12.1.7"
+        "com.unity.burst": "1.8.9",
+        "com.unity.render-pipelines.core": "12.1.15",
+        "com.unity.shadergraph": "12.1.15"
       }
     },
     "com.unity.searcher": {
@@ -110,11 +123,11 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.shadergraph": {
-      "version": "12.1.7",
+      "version": "12.1.15",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "12.1.7",
+        "com.unity.render-pipelines.core": "12.1.15",
         "com.unity.searcher": "4.9.1"
       }
     },
@@ -160,7 +173,7 @@
       }
     },
     "com.unity.xr.core-utils": {
-      "version": "2.2.3",
+      "version": "2.3.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -185,7 +198,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.10",
+      "version": "2.1.11",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -195,7 +208,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.xr.management": {
-      "version": "4.4.0",
+      "version": "4.5.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -216,7 +229,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.xr.openxr": {
-      "version": "1.12.1",
+      "version": "1.13.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {

@@ -1,7 +1,7 @@
 ﻿using BNG;
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
-using VRExplorer;
+using HenryLab;
 
 /// <summary>
 /// Apply forward force to instantiated prefab
@@ -26,6 +26,8 @@ public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEnt
             return gameObject.AddComponent<Grabbable>();
         }
     }
+
+    public Transform Destination => throw new System.NotImplementedException();
 
     [ExcludeFromCodeCoverage] public void Triggerring() { }
 
@@ -60,5 +62,8 @@ public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEnt
         rigidBody.AddForce(force);
     }
 
-
+    public void OnReleased()
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -1,7 +1,7 @@
 using BNG;
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
-using VRExplorer;
+using HenryLab;
 
 public class LightCandle : MonoBehaviour, IGrabbableEntity
 {
@@ -17,7 +17,11 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
     }
     [ExcludeFromCodeCoverage] public string Name => Str.Grabbable;
 
+<<<<<<< Updated upstream
     [ExcludeFromCodeCoverage] public Transform Destination => null;
+=======
+    public Transform Destination => throw new System.NotImplementedException();
+>>>>>>> Stashed changes
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()
@@ -45,8 +49,15 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
             flames.Play();
         }
     }
+<<<<<<< Updated upstream
     [ExcludeFromCodeCoverage]
     public void OnReleased()
     {
+=======
+
+    public void OnReleased()
+    {
+        throw new System.NotImplementedException();
+>>>>>>> Stashed changes
     }
 }
