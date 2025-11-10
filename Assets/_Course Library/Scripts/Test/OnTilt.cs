@@ -28,6 +28,10 @@ public class OnTilt : MonoBehaviour, IGrabbableEntity
     public void OnGrabbed()
     {
     }
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
 
     [Tooltip("Tilt range, 0 - 180 degrees")]
     [Range(0, 1)] public float threshold = 0.1f;
@@ -69,8 +73,6 @@ public class OnTilt : MonoBehaviour, IGrabbableEntity
         }
     }
 
-    public void OnReleased()
-    {
-        throw new NotImplementedException();
-    }
+
+
 }

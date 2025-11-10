@@ -30,6 +30,10 @@ public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEnt
     {
         Fire();
     }
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
 
     [ExcludeFromCodeCoverage] public void OnGrabbed() { }
 
@@ -56,8 +60,4 @@ public class LaunchProjectile : MonoBehaviour, ITriggerableEntity, IGrabbableEnt
         rigidBody.AddForce(force);
     }
 
-    public void OnReleased()
-    {
-        throw new System.NotImplementedException();
-    }
 }

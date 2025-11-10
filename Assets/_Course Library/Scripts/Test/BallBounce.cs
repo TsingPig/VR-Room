@@ -12,7 +12,7 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
         get
         {
             var g = GetComponent<Grabbable>();
-            if(g) return g;
+            if (g) return g;
             return gameObject.AddComponent<Grabbable>();
         }
     }
@@ -22,6 +22,11 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
 
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()
+    {
+    }
+
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
     {
     }
 
@@ -42,10 +47,5 @@ public class BallBounce : MonoBehaviour, IGrabbableEntity
         {
             audioSource.PlayOneShot(collisionSound);
         }
-    }
-
-    public void OnReleased()
-    {
-        throw new System.NotImplementedException();
     }
 }

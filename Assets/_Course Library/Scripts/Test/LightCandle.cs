@@ -25,6 +25,10 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
     {
     }
 
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
+    {
+    }
     public ParticleSystem flames;
     private Rigidbody rigidbody;
     public float velocityThreshold = 0.5f;
@@ -46,8 +50,5 @@ public class LightCandle : MonoBehaviour, IGrabbableEntity
             flames.Play();
         }
     }
-    [ExcludeFromCodeCoverage]
-    public void OnReleased()
-    {
-    }
+
 }
