@@ -9,7 +9,7 @@
         "com.unity.settings-manager": "1.0.1",
         "com.unity.xr.interaction.toolkit": "2.0.4"
       },
-      "hash": "79a86fffa72adec3d7df6aa293c86502eb98aa97"
+      "hash": "8644a2ae572f4a13fc0885b819bcc4cb14675f61"
     },
     "com.henrylab.vrexplorer": {
       "version": "https://github.com/TsingPig/VRExplorer_Release.git",
@@ -21,6 +21,16 @@
         "com.unity.xr.interaction.toolkit": "2.0.4"
       },
       "hash": "4978ac8f08580a2b2d3bd2cd2a7c53fc5a8ef79a"
+    },
+    "com.unity.burst": {
+      "version": "1.8.18",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.cn"
     },
     "com.unity.collab-proxy": {
       "version": "2.5.2",
@@ -77,12 +87,49 @@
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
+    "com.unity.render-pipelines.core": {
+      "version": "12.1.15",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.render-pipelines.universal": {
+      "version": "12.1.15",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.burst": "1.8.9",
+        "com.unity.render-pipelines.core": "12.1.15",
+        "com.unity.shadergraph": "12.1.15"
+      }
+    },
+    "com.unity.searcher": {
+      "version": "4.9.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.cn"
+    },
     "com.unity.settings-manager": {
       "version": "1.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
+    },
+    "com.unity.shadergraph": {
+      "version": "12.1.15",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.render-pipelines.core": "12.1.15",
+        "com.unity.searcher": "4.9.1"
+      }
     },
     "com.unity.test-framework": {
       "version": "1.1.33",
